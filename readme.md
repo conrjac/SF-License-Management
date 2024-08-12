@@ -1,0 +1,1 @@
+Proof of concept application allow SF licenses and users to be allocated to 'pools' - useful for large implementations where projects/budgets but licenses for groups of users.
