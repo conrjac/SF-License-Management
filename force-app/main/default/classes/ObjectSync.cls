@@ -1,7 +1,8 @@
-public class ObjectSync {
+public with sharing class ObjectSync {
     
     public static void all()
     {
+        // sync license, and assignment details
         license();
         licenseAssignment();
     }
@@ -99,7 +100,7 @@ public class ObjectSync {
             ulas.add(ula);
         }
         
-        upsert ulas UserLicenseAllocationKey__c;         
+        upsert ulas UserLicenseAllocationKey__c;
     }
     
     // https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_permissionsetlicense.htm

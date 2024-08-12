@@ -1,8 +1,4 @@
 public class UserLicenseAllocationTriggerHelper {
-    
-    public UserLicenseAllocationTriggerHelper() {
-      //  System.debug('Inside AccountTriggerHelper Constructor');
-    }
 
     public void updateUserPoolAllocationField(List<UserLicenseAllocation__c> newUserLicenseAllocations)
     {
