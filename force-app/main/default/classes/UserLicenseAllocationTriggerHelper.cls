@@ -4,10 +4,7 @@ public class UserLicenseAllocationTriggerHelper {
     {
         Set<Id> usersInScope = new Set<Id>();
         
-        For(UserLicenseAllocation__c allocation : newUserLicenseAllocations)
-        {
-            usersInScope.add(allocation.User__c);
-        }
+        For(UserLicenseAllocation__c allocation : newUserLicenseAllocations) usersInScope.add(allocation.User__c);
         
         Map<Id, Id> userToPoolMappingsForAllocations = userToPoolMappings(usersInScope);
         

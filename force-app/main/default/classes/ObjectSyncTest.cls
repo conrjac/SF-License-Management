@@ -5,8 +5,7 @@ private class ObjectSyncTest {
 private static void instantiateClass()
 {
     ObjectSyncTest os = new ObjectSyncTest();
-
-    Assert.isNotNull(os);
+    Assert.isNotNull(os, 'Instantiating class should not return null');
 }
 
 
